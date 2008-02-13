@@ -6,6 +6,7 @@ Source:		http://math.nist.gov/javanumerics/jama/Jama-%{version}.tar.gz
 License:	Public Domain
 URL:		http://math.nist.gov/javanumerics/jama/
 Group:		Development/Java
+BuildRoot:	%{_tmppath}/%{_basename}-%{version}-%{release}-buildroot
 %description
 JAMA is a basic linear algebra package for Java. It provides user-level
 classes for constructing and manipulating real, dense matrices. It is
