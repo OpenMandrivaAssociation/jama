@@ -8,7 +8,7 @@ URL:		http://math.nist.gov/javanumerics/jama/
 Group:		Development/Java
 BuildRoot:	%{_tmppath}/%{_basename}-%{version}-%{release}-buildroot
 BuildArch:	noarch
-BuildRequires:	java-devel ant
+BuildRequires:	java-devel ant jpackage-utils java-rpmbuild
 %description
 JAMA is a basic linear algebra package for Java. It provides user-level
 classes for constructing and manipulating real, dense matrices. It is
