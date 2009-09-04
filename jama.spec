@@ -1,7 +1,7 @@
 Name:		jama
 Summary:	A Java Matrix Package
 Version:	1.0.2
-Release:	%mkrel 3
+Release:	%mkrel 4
 Source:		http://math.nist.gov/javanumerics/jama/Jama-%{version}.tar.gz
 License:	Public Domain
 URL:		http://math.nist.gov/javanumerics/jama/
