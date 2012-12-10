@@ -1,14 +1,16 @@
 Name:		jama
 Summary:	A Java Matrix Package
 Version:	1.0.2
-Release:	%mkrel 5
+Release:	6
 Source:		http://math.nist.gov/javanumerics/jama/Jama-%{version}.tar.gz
 License:	Public Domain
 URL:		http://math.nist.gov/javanumerics/jama/
 Group:		Development/Java
-BuildRoot:	%{_tmppath}/%{_basename}-%{version}-%{release}-buildroot
 BuildArch:	noarch
-BuildRequires:	java-devel ant jpackage-utils java-rpmbuild
+BuildRequires:	java-devel
+BuildRequires:	ant
+BuildRequires:	jpackage-utils
+BuildRequires:	java-rpmbuild
 %description
 JAMA is a basic linear algebra package for Java. It provides user-level
 classes for constructing and manipulating real, dense matrices. It is
@@ -60,7 +62,7 @@ EOF
 %{__ln_s} %{name}-%{version}.jar %{buildroot}%{_javadir}/%{name}.jar
 
 %{__install} -d %{buildroot}%{_javadocdir}
-%{__cp} -a Jama/doc %{buildroot}%{_javadocdir}/%{name}-%{version}
+cp -a Jama/doc %{buildroot}%{_javadocdir}/%{name}-%{version}
 
 
 %files
@@ -70,4 +72,24 @@ EOF
 
 %files javadoc
 %{_javadocdir}/%{name}-%{version}
+
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 1.0.2-5mdv2011.0
++ Revision: 619768
+- the mass rebuild of 2010.0 packages
+
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 1.0.2-4mdv2010.0
++ Revision: 429591
+- rebuild
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 1.0.2-3mdv2009.0
++ Revision: 247381
+- rebuild
+
+* Thu Feb 14 2008 Nicolas Vigier <nvigier@mandriva.com> 1.0.2-1mdv2008.1
++ Revision: 167765
+- import jama
+
 
