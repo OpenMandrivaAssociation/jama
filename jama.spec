@@ -4,7 +4,7 @@ Version:	1.0.2
 Release:	7
 Source:		http://math.nist.gov/javanumerics/jama/Jama-%{version}.tar.gz
 License:	Public Domain
-URL:		http://math.nist.gov/javanumerics/jama/
+URL:		https://math.nist.gov/javanumerics/jama/
 Group:		Development/Java
 BuildArch:	noarch
 BuildRequires:	java-devel
